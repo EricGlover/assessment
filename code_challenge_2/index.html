@@ -13,6 +13,7 @@
 <body>
   <div id="root"></div>
 
+
   <script>
     const users = [
       {
@@ -42,8 +43,26 @@
         phone: 0
       }
     ];
+    /*
+      quick note here, the timer doesn't seem to be functioning in my link
+      but I think it's been about an hour and a half so I'm going to submit this
+      in the incomplete state that it is. It's pretty terrible but I'm still finishing
+      up the jQuery and Node.js sections of the prep work.
+    */
+    var $table = $("<table>")
+      .append($("<thead>"))
+      .append($("<th>Name</th>"))
+      .append($("<th>Age</th>"))
+      .append($("<th>Email</th>"))
+      .append($("<th>Phone</th>"))
+      .append($("</thead>"))
+      .append($("<tbody>"))
+    $("#root").append($table);
 
-    // Your code here...
+    //add entries
+    $.each( users, function() {
+
+    })
   </script>
 </body>
 
